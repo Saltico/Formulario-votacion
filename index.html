@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba Técnica</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+</head>
+<body>
+    <header>
+        <h1>Prueba técnica HTML - PHP - JS - MYSQL</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>FORMULARIO DE VOTACIÓN</h2>
+            <form id="form">
+                <div class="form-field">
+                    <label for="name">Nombre y Apellido:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="alias">Alias:</label>
+                    <input type="text" id="alias" name="alias" required>
+                </div>
+                <div class="form-field">
+                    <label for="rut">RUT:</label>
+                    <input type="text" id="rut" name="rut" required>
+                </div>
+                <div style="text-align: end; margin: 0.2rem 3rem" id="rut-validator"></div>
+                 
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="region">Región:</label>
+                    <select id="region" name="region"></select>
+                </div>
+                <div class="form-field">
+                    <label for="comuna">Comuna:</label>
+                    <select id="comuna" name="comuna"></select>
+                </div>
+                <div class="form-field">
+                    <label for="candidato">Candidato:</label>
+                    <select id="candidato" name="candidato">
+                        <option value="" disabled selected>Selecciona un candidato</option>
+                        <option value="Matías">Matías</option>
+                        <option value="Constanza">Constanza</option>
+                        <option value="Vicente">Vicente</option>
+                    </select>
+                </div>
+                <div style="margin-top: 20px" class="form-field">
+                    <label for="medio">Como se enteró de Nosotros:</label>
+                    <section id="medio" name="medio">
+                        <input type="checkbox" id="checkbox-web" name="medio[]" value="web">
+                        <label for="checkbox-web">Web</label>
+                        <input type="checkbox" id="checkbox-tv" name="medio[]" value="tv">
+                        <label for="checkbox-tv">TV</label>
+                        <input type="checkbox" id="checkbox-rrss" name="medio[]" value="rrss">
+                        <label for="checkbox-rrss">Redes Sociales</label>
+                        <input type="checkbox" id="checkbox-friend" name="medio[]" value="friend">
+                        <label for="checkbox-friend">Amigo</label>
+                    </section>
+                </div>
+                <div class="form-field">
+                    <button class="form-button" type="submit">Votar</button>
+                </div>
+            </form>
+            <div class="form-field">
+                <div id="resultado"></div>
+            </div>
+            <script src="script.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>Matías Castillo Pérez matiicasper@gmail.com</p>
+    </footer>
+</body>
+</html>
